@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+
       a {
         text-decoration: none;
         color: inherit;
@@ -90,7 +91,7 @@
         height: 20px;
       }
 
-      .skills-section {
+      .skills-section{
         padding: 10px 20px;
         width: 100%;
       }
@@ -112,16 +113,47 @@
       }
       .education-section > div {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-top: 8px;
       }
+
+      .width-70 {width: 70%;}
       .font-size-sm {
         font-size: 0.9rem;
       }
       .font-weight-bold {
         font-weight: bold;
       }
+      .efficiency {
+        background-color: white;
+        height: 10px;
+        border-radius: 5px;
+        
+      }
+      .efficiency__100 {
+        flex-grow: 1;
+      }
+      .efficiency__70 {
+       flex-grow: .7;
+      }
+      .language-container {
+       display: flex;
+       align-items: center;
+      }
+      .language-container span {width: 80px}
+      /* .language-container  li:before {
+      content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 50%;
+    left: 0;
+    margin-top: -7px; 
+    width: 14px;
+    height: 14px;
+    background: #000;
+} 
+*/
     </style>
     <title>Document</title>
   </head>
@@ -194,14 +226,14 @@
       <div class="skills-section">
         <h4 class="title title__light">LANGUES</h4>
         <ul>
-          <li>Arabic: Native</li>
-          <li>French: Fluent</li>
-          <li>English: Fluent</li>
+          <li class="language-container"><span>Arabe:</span>  <div class="efficiency efficiency__100"></div></li>
+          <li class="language-container"><span>Français:</span>  <div class="efficiency efficiency__70"></div></li>
+          <li class="language-container"><span>Anglais:</span> <div class="efficiency efficiency__100"></div></li>
         </ul>
       </div>
     </div>
     <div class="right">
-      <h1>Mbarki Amine/h1>
+      <h1>Mbarki Amine</h1>
       <p>
         Étudiant en génie logiciel, passionné par les nouvelles technologies et le développement web.  Actuellement à la recherche d'un stage.
       </p>
@@ -235,7 +267,7 @@
         <h4 class="title title__dark">FORMATION</h4>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>Cycle préparatoire aux études d'ingénieur</h5>
             <p class="font-size-sm">IPIEM - Institut préparatoire aux études d'ingénieur de Monastir</p>
           </div>
@@ -243,7 +275,7 @@
         </div>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>Cycle préparatoire intégré informatique</h5>
             <p class="font-size-sm">Ecole Polytechnique de Sousse</p>
           </div>
@@ -251,7 +283,7 @@
         </div>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>1ère année Génie logiciel</h5>
             <p class="font-size-sm">Ecole Polytechnique de Sousse</p>
           </div>
@@ -259,7 +291,7 @@
         </div>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>Génie logiciel</h5>
             <p class="font-size-sm">EPI-polytechnique Sousse</p>
           </div>

@@ -112,15 +112,36 @@
       }
       .education-section > div {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-top: 8px;
+      }
+      .width-70 {
+        width: 70%;
       }
       .font-size-sm {
         font-size: 0.9rem;
       }
       .font-weight-bold {
         font-weight: bold;
+      }
+      .efficiency {
+        background-color: white;
+        height: 10px;
+        border-radius: 5px;
+        
+      }
+      .efficiency__100 {
+        flex-grow: 1;
+      }
+      .efficiency__70 {
+       flex-grow: .7;
+      }
+      .language-container {
+       display: flex;
+       align-items: center;
+      }
+      .language-container span {
+        width: 80px;
       }
     </style>
     <title>Document</title>
@@ -194,9 +215,9 @@
       <div class="skills-section">
         <h4 class="title title__light">LANGUAGES</h4>
         <ul>
-          <li>Arabic: Native</li>
-          <li>French: Fluent</li>
-          <li>English: Fluent</li>
+          <li class="language-container"><span>Arabe:</span>  <div class="efficiency efficiency__100"></div></li>
+          <li class="language-container"><span>Français:</span>  <div class="efficiency efficiency__70"></div></li>
+          <li class="language-container"><span>Anglais:</span> <div class="efficiency efficiency__100"></div></li>
         </ul>
       </div>
     </div>
@@ -237,7 +258,7 @@
         <h4 class="title title__dark">EDUCATION</h4>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>Preparatory Cycle For Engineering Studies</h5>
             <p class="font-size-sm">IPIEM - Institut préparatoire aux études d'ingénieur de Monastir</p>
           </div>
@@ -245,7 +266,7 @@
         </div>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>Integrated Preparatory Cycle For Engineering Studies</h5>
             <p class="font-size-sm">Ecole Polytechnique de Sousse</p>
           </div>
@@ -253,7 +274,7 @@
         </div>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>First Year Software Engineering</h5>
             <p class="font-size-sm">Ecole Polytechnique de Sousse</p>
           </div>
@@ -261,7 +282,7 @@
         </div>
 
         <div>
-          <div>
+          <div class="width-70">
             <h5>Software Engineering</h5>
             <p class="font-size-sm">EPI-polytechnique Sousse</p>
           </div>
